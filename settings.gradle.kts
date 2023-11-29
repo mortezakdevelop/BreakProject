@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 rootProject.name = "ComposeBreak"
 include(":app")
 include(":library:designsystem")
+include(":feature:countdown")
