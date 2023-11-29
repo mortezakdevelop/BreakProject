@@ -38,7 +38,6 @@ android {
         kotlinCompilerExtensionVersion = "1.4.3"
     }
 
-
 }
 
 dependencies {
