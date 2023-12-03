@@ -1,6 +1,7 @@
 package com.example.countdown.component
 
 import androidx.compose.foundation.layout.Row
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -35,6 +36,8 @@ fun Counter(
 @Composable
 private fun CounterScreen() {
     ComposeBreakTheme {
-        Counter(minute = "19", second = "25")
+        Surface {
+            Counter(minute = "19", second = "25")
+        }
     }
 }
