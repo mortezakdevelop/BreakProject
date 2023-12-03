@@ -1,6 +1,10 @@
 package com.example.countdown.component
 
+import android.annotation.SuppressLint
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.LocalTextStyle
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -16,6 +20,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.sp
 import com.example.designsystem.ThemesPreview
+import com.example.designsystem.theme.ComposeBreakTheme
 
 @Composable
 fun CustomCountdownText(
@@ -57,8 +62,14 @@ fun CustomCountdownText(
 
 }
 
+@SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
+@OptIn(ExperimentalMaterial3Api::class)
 @ThemesPreview
 @Composable
 private fun CustomCountdownText() {
-    CustomCountdownText(text = "19:39")
+    ComposeBreakTheme {
+        Surface {
+            CustomCountdownText(text = "19:39")
+        }
+    }
 }
