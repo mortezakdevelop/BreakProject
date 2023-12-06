@@ -17,3 +17,4 @@ rootProject.name = "ComposeBreak"
 include(":app")
 include(":library:designsystem")
 include(":feature:countdown")
+include(":library:ext-functions")
